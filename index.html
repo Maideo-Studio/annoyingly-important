@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Auto Open</title>
+  <script>
+    window.onload = function () {
+      const newWindow = window.open("about:blank", "_blank");
+
+      if (newWindow) {
+        newWindow.location.href = "https://dynaverse-game-finally-working.vercel.app/";
+      } else {
+        alert("Popup blocked! Please allow popups and refresh.");
+      }
+    };
+  </script>
+</head>
+<body>
+  <p>Opening site...</p>
+</body>
+</html>
